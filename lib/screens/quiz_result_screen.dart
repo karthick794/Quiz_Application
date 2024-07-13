@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
 class QuizResultScreen extends StatelessWidget {
-  const QuizResultScreen({super.key});
-
+ const  QuizResultScreen({super.key, required this.chosenAnswer});
+ final List<String> chosenAnswer;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       child: Container(
         margin: const EdgeInsets.all(20),
-        child: const Column(
+        child:  const Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize:MainAxisSize.max,
-          children: [
-            Text("Here your result")
-          ],
+          mainAxisSize: MainAxisSize.max,
+          children: [Text("chosenAnswer")],
         ),
       ),
     );
