@@ -3,7 +3,7 @@ import 'package:myapp/utilites/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuizStartScreen extends StatelessWidget {
-  const QuizStartScreen(this.startquiz,{super.key});
+  const QuizStartScreen(this.startquiz, {super.key});
   final void Function() startquiz;
   @override
   Widget build(BuildContext context) {
@@ -19,20 +19,16 @@ class QuizStartScreen extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-           Text(
+          Text(
             Constants.tagLine,
             style: GoogleFonts.lato(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-              color: Colors.black
-            ),
+                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
           ),
           const SizedBox(
             height: 25,
           ),
           OutlinedButton.icon(
-              onPressed: 
-               startquiz,
+              onPressed: startquiz,
               icon: const Icon(
                 Icons.arrow_forward,
                 color: Color.fromARGB(255, 35, 105, 185),

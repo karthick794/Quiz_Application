@@ -11,7 +11,6 @@ class OptionButton extends StatelessWidget {
         child: Text(
           options,
           textAlign: TextAlign.center,
-        )
-        );
+        ));
   }
 }

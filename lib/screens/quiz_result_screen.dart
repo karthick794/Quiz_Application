@@ -4,7 +4,8 @@ import 'package:myapp/data/questions_data.dart';
 import 'package:myapp/widgets/result_summary.dart';
 
 class QuizResultScreen extends StatelessWidget {
-  const QuizResultScreen({super.key, required this.chosenAnswer,required this.restartQuizScreen});
+  const QuizResultScreen(
+      {super.key, required this.chosenAnswer, required this.restartQuizScreen});
   final List<String> chosenAnswer;
   final void Function() restartQuizScreen;
   List<Map<String, Object>> getSummaryData() {

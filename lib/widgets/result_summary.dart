@@ -15,7 +15,13 @@ class ResultSummary extends StatelessWidget {
             return Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                QuestionIndentifier(questionIndex:((data['question_index'] as int) + 1).toString(),correctAnswer: data['correct_answer'] == data['user_answer']?true:false,),
+                QuestionIndentifier(
+                  questionIndex:
+                      ((data['question_index'] as int) + 1).toString(),
+                  correctAnswer: data['correct_answer'] == data['user_answer']
+                      ? true
+                      : false,
+                ),
                 // Text(
                 //   ((data['question_index'] as int) + 1).toString(),
                 //   style: TextStyle(
@@ -24,9 +30,9 @@ class ResultSummary extends StatelessWidget {
                 //           : Colors.red,
                 //       fontSize: 16),
                 // ),
-                 const SizedBox(
-              width: 20,
-            ),
+                const SizedBox(
+                  width: 20,
+                ),
                 Expanded(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -57,7 +63,7 @@ class ResultSummary extends StatelessWidget {
                                 : Colors.red,
                             fontSize: 16),
                       ),
-                       const SizedBox(height: 5),
+                      const SizedBox(height: 5),
                     ],
                   ),
                 )
